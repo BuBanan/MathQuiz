@@ -157,5 +157,37 @@ namespace MathQuiz
                 answerBox.Select(0, lenghtOfAnswer);
             }
         }
+
+        private void sound(object sender, EventArgs e)
+        {
+             if (dividend / divisor == quotient.Value)
+            {
+                Console.Beep();
+            }
+        }
+
+        private void sound1(object sender, EventArgs e)
+        {
+            if (minuend - subtrahend == difference.Value)
+            {
+                Console.Beep();
+            }
+        }
+
+        private void sound2(object sender, EventArgs e)
+        {
+            if (multiplicand * multiplier == product.Value)
+            {
+                Console.Beep();
+            }
+        }
+
+        private void sound3(object sender, EventArgs e)
+        {
+            if (addend1 + addend2 == sum.Value)
+            {
+                Console.Beep();
+            }
+        }
     }
 }
