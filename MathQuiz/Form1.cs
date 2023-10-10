@@ -48,8 +48,8 @@ namespace MathQuiz
         private void StartTheQuiz()
         {
             Random randomizer = new Random();
-            addend1 = randomizer.Next(77);
-            addend2 = randomizer.Next(77);
+            addend1 = randomizer.Next(51);
+            addend2 = randomizer.Next(51);
             plusLeftLabel.Text = addend1.ToString();
             plusRightLabel.Text = addend2.ToString();
             sum.Value = 0;
@@ -61,7 +61,7 @@ namespace MathQuiz
             multiplicand = randomizer.Next(2, 11);
             multiplier = randomizer.Next(2, 11);
             timesLeftLabel.Text = multiplicand.ToString();
-            timesRightLabel.Text = multiplicand.ToString();
+            timesRightLabel.Text = multiplier.ToString();
             product.Value = 0;
             divisor = randomizer.Next(2, 11);
             int temporaryQuotient = randomizer.Next(2, 11);
